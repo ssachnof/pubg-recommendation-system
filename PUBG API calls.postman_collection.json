@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "10091b12-9e08-4c7c-a302-307f25658991",
+		"name": "PUBG API calls",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Sample matches",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{apikey}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.pubg.com/shards/steam/samples",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pubg",
+						"com"
+					],
+					"path": [
+						"shards",
+						"steam",
+						"samples"
+					]
+				},
+				"description": "Gets a list of 75 match ids"
+			},
+			"response": []
+		},
+		{
+			"name": "Match data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{apikey}}",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.api+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.pubg.com/shards/steam/matches/:matchid",
+					"protocol": "https",
+					"host": [
+						"api",
+						"pubg",
+						"com"
+					],
+					"path": [
+						"shards",
+						"steam",
+						"matches",
+						":matchid"
+					],
+					"variable": [
+						{
+							"key": "matchid",
+							"value": "12751798-a39f-4b14-a4c1-08d1b9b15cb1"
+						}
+					]
+				},
+				"description": "Basic data about a single PUBG match from its match id"
+			},
+			"response": []
+		}
+	]
+}
