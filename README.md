@@ -1,6 +1,6 @@
 # Panalyzer
 
-## Original Repo Link:
+## Original Repository Link:
 https://github.com/pfarrell19/Panalyzer
 
 ## Contributors: 
