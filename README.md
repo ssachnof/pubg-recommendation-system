@@ -6,6 +6,9 @@ https://github.com/pfarrell19/Panalyzer
 ## Contributors: 
 Pat Farrell, James Kao, Samuel Sachnoff, Andrew LeDawson
 
+## System Requirements:
+Please make sure you run on a windows computer.
+
 ## Running Instructions:
 Please run driver.py to obtain path and drop location recomendations on an already trained model
 
